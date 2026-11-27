@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar data-astro-cid-g5ptsecz><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Widgets and presets | Wattcher</title><link rel="canonical" href="https://sagrpatl.github.io/wattcher-docs/widgets-and-presets/"/><link rel="sitemap" href="/wattcher-docs/sitemap-index.xml"/><link rel="shortcut icon" href="/wattcher-docs/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v7.4.12"/><meta name="generator" content="Starlight v0.43.1"/><meta property="og:title" content="Widgets and presets"/><meta property="og:type" content="article"/><meta property="og:url" content="https://sagrpatl.github.io/wattcher-docs/widgets-and-presets/"/><meta property="og:locale" content="en"/><meta property="og:site_name" content="Wattcher"/><meta name="twitter:card" content="summary_large_image"/><script>
+	(() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+	})();
+</script><link rel="stylesheet" href="/wattcher-docs/_astro/print.C9eyqPGL.css" media="print"><link rel="stylesheet" href="/wattcher-docs/_astro/common.nv8LIUbO.css"><script type="module" src="/wattcher-docs/_astro/page.cNngjUgL.js"></script></head><body data-astro-cid-g5ptsecz><a class="sl-skip-link" href="#_top" data-astro-cid-qb7clj6f>Skip to content</a><div class="page sl-flex" data-astro-cid-yntsjkba><header class="header" data-astro-cid-yntsjkba><div class="header" data-astro-cid-by6fddyj><div class="title-wrapper sl-flex" data-astro-cid-by6fddyj><a href="/wattcher-docs/" class="site-title sl-flex" data-astro-cid-6rvad3va><img alt src="/wattcher-docs/_astro/logo.qBU7y1If.svg" width="1024" height="1024" data-astro-cid-6rvad3va><span translate="no" data-astro-cid-6rvad3va>Wattcher</span></a></div><div class="sl-flex print:hidden" data-astro-cid-by6fddyj><site-search data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}" data-astro-cid-b5kgnn7o="true"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" data-astro-cid-b5kgnn7o><svg data-astro-cid-b5kgnn7o="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block" aria-hidden="true" data-astro-cid-b5kgnn7o>Search</span><kbd class="sl-hidden md:sl-flex" style="display: none" data-astro-cid-b5kgnn7o><kbd data-astro-cid-b5kgnn7o>Ctrl</kbd><kbd data-astro-cid-b5kgnn7o>K</kbd></kbd></button><dialog style="padding: 0" aria-label="Search" data-astro-cid-b5kgnn7o><div class="dialog-frame sl-flex" data-astro-cid-b5kgnn7o><button data-close-modal class="sl-flex md:sl-hidden" data-astro-cid-b5kgnn7o>Cancel</button><div class="search-container" data-astro-cid-b5kgnn7o><div id="starlight__search" data-astro-cid-b5kgnn7o></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/wattcher-docs/_astro/Search.astro_astro_type_script_index_0_lang.BKnSN1Zo.js"></script></div><div class="sl-hidden md:sl-flex print:hidden right-group" data-astro-cid-by6fddyj><div class="sl-flex social-icons" data-astro-cid-by6fddyj></div><starlight-theme-select data-astro-cid-smhvfpqh="true"><label style="--sl-select-width: 6.25em" data-astro-cid-2z5xp7gb><span class="sr-only" data-astro-cid-2z5xp7gb>Select theme</span><span class="icon label-icon" data-astro-cid-2z5xp7gb><svg class="sl-theme-icon-dark" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg class="sl-theme-icon-light" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg class="sl-theme-icon-auto" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></span><select autocomplete="off" data-astro-cid-2z5xp7gb><option value="dark" data-astro-cid-2z5xp7gb>Dark</option><option value="light" data-astro-cid-2z5xp7gb>Light</option><option value="auto" selected data-astro-cid-2z5xp7gb>Auto</option></select><svg class="icon caret" data-astro-cid-2z5xp7gb="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>(() => {
+		const theme = (typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme'));
+		if (theme) document.querySelectorAll('starlight-theme-select select').forEach((s) => { s.value = theme; });
+	})();</script><script type="module">var e=`starlight-theme`,t=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,n=()=>t(typeof localStorage<`u`&&localStorage.getItem(e));function r(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var i=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function a(e){document.querySelectorAll(`starlight-theme-select select`).forEach(t=>{t.value=e}),document.documentElement.dataset.theme=e===`auto`?i():e,r(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{n()===`auto`&&a(`auto`)});var o=class extends HTMLElement{constructor(){super(),a(n()),this.querySelector(`select`)?.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&a(t(e.currentTarget.value))})}};customElements.define(`starlight-theme-select`,o);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script></div></div></header><nav class="sidebar print:hidden" aria-label="Main" data-astro-cid-yntsjkba><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden" data-astro-cid-r2osgdlg><svg class="open-menu" data-astro-cid-r2osgdlg="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg class="close-menu" data-astro-cid-r2osgdlg="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only" data-astro-cid-r2osgdlg>Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane" data-astro-cid-yntsjkba="true"><div class="sidebar-content sl-flex" data-astro-cid-yntsjkba><sl-sidebar-state-persist data-hash="0ac710a" data-astro-cid-ipdry5cl="true"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level" data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/" class="large" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Overview</span></a></li><li data-astro-cid-rmhv4bp6><details open data-astro-cid-rmhv4bp6><summary data-astro-cid-rmhv4bp6><span class="group-label" data-astro-cid-rmhv4bp6><span class="large" data-astro-cid-rmhv4bp6>Start here</span></span><svg class="caret" data-astro-cid-rmhv4bp6="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/getting-started/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Getting started</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/devices/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Pair your trainer and sensors</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/first-ride/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Your first ride</span></a></li></ul></details></li><li data-astro-cid-rmhv4bp6><details open data-astro-cid-rmhv4bp6><summary data-astro-cid-rmhv4bp6><span class="group-label" data-astro-cid-rmhv4bp6><span class="large" data-astro-cid-rmhv4bp6>Using Wattcher</span></span><svg class="caret" data-astro-cid-rmhv4bp6="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/overlay/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>The overlay</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/widgets-and-presets/" aria-current="page" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Widgets and presets</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/preview/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Preview</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/cues/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Off-target cues</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/phone-remote/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Phone remote</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/mirroring/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Mirroring</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/building-workouts/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Building workouts</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/workout-text-format/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Workout text format (intervals.icu syntax)</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/rides/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Rides and .FIT files</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/shortcuts/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Keyboard shortcuts</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/troubleshooting/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Troubleshooting</span></a></li></ul></details></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex" data-astro-cid-p4azlveh><div class="social-icons" data-astro-cid-p4azlveh></div><starlight-theme-select data-astro-cid-smhvfpqh="true"><label style="--sl-select-width: 6.25em" data-astro-cid-2z5xp7gb><span class="sr-only" data-astro-cid-2z5xp7gb>Select theme</span><span class="icon label-icon" data-astro-cid-2z5xp7gb><svg class="sl-theme-icon-dark" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg class="sl-theme-icon-light" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg class="sl-theme-icon-auto" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></span><select autocomplete="off" data-astro-cid-2z5xp7gb><option value="dark" data-astro-cid-2z5xp7gb>Dark</option><option value="light" data-astro-cid-2z5xp7gb>Light</option><option value="auto" selected data-astro-cid-2z5xp7gb>Auto</option></select><svg class="icon caret" data-astro-cid-2z5xp7gb="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>(() => {
+		const theme = (typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme'));
+		if (theme) document.querySelectorAll('starlight-theme-select select').forEach((s) => { s.value = theme; });
+	})();</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame" data-astro-cid-yntsjkba><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex" data-astro-cid-lrzkfocr><aside class="right-sidebar-container print:hidden" data-astro-cid-lrzkfocr><div class="right-sidebar" data-astro-cid-lrzkfocr><div class="lg:sl-hidden" data-astro-cid-qok35upx><mobile-starlight-toc data-min-h="2" data-max-h="3" data-astro-cid-66cqc7ze="true"><nav aria-labelledby="starlight__on-this-page--mobile" data-astro-cid-66cqc7ze><details id="starlight__mobile-toc" data-astro-cid-66cqc7ze><summary id="starlight__on-this-page--mobile" class="sl-flex" data-astro-cid-66cqc7ze><span class="toggle sl-flex" data-astro-cid-66cqc7ze>On this page<svg class="caret" data-astro-cid-66cqc7ze="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current" data-astro-cid-66cqc7ze></span></summary><div class="dropdown" data-astro-cid-66cqc7ze><ul class="isMobile" style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-eight-widgets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The eight widgets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-overlay-tab" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The Overlay tab</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#presets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Presets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#themes-and-card-style" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Themes and card style</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#your-own-presets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Your own presets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#switch-presets-by-app" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Switch presets by app</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/wattcher-docs/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block" data-astro-cid-qok35upx><div class="sl-container" data-astro-cid-qok35upx><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-eight-widgets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The eight widgets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-overlay-tab" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The Overlay tab</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#presets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Presets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#themes-and-card-style" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Themes and card style</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#your-own-presets" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Your own presets</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#switch-presets-by-app" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Switch presets by app</span></a></li></ul></nav></starlight-toc><script type="module" src="/wattcher-docs/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane" data-astro-cid-lrzkfocr><main data-pagefind-body lang="en" dir="ltr" data-astro-cid-g5ptsecz><div class="sl-banner" data-pagefind-ignore data-astro-cid-ofbg3qve>Wattcher isn't publicly available yet. This guide is an early preview; downloads and source code come later.</div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><h1 id="_top" data-astro-cid-bebwqqxs>Widgets and presets</h1></div></div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><div class="sl-markdown-content"><p><a href="/wattcher-docs/">Guide</a> › Widgets and presets</p>
+<p>Besides the main card, Wattcher has eight <strong>widgets</strong>: small overlays you can place
+anywhere on the screen. Like the main card they let clicks through, and like the main
+card they follow the ride live. Turn them on and off in Control window → <strong>Overlay</strong> (or
+the phone’s Overlay tab), or let a <strong>preset</strong> pick them.</p>
+<p><img src="/wattcher-docs/guide-images/screen-everything.webp" alt="Every widget on screen, with a “Spin up now” cue"></p>
+<div class="sl-heading-wrapper level-h2"><h2 id="the-eight-widgets">The eight widgets</h2><a class="sl-anchor-link" href="#the-eight-widgets"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The eight widgets”</span></a></div>
+<p><strong>Intervals &amp; splits</strong>: the last two intervals (target, your average and a rating), the
+current one (average so far, time left) and the next three. The rating, for ERG
+intervals: <strong>★</strong> you were within ±5 % of the target for at least 80 % of the interval,
+<strong>☆</strong> at least half of it, <strong>·</strong> less. Its options: the <strong>Time column</strong> shows time
+left, <strong>% done</strong> of the current interval, or <strong>Bar only</strong> (no numbers), and the
+<strong>Target</strong>, <strong>Your average</strong>, <strong>On-target mark</strong> and <strong>Time / %</strong> columns can each be
+switched off. Both are part of the preset.</p>
+<p><img src="/wattcher-docs/guide-images/widget-splits.png" alt="Intervals &amp; splits"></p>
+<p><strong>Workout strip</strong>: the workout’s profile along the bottom of the screen with your power
+and a playhead: the next 10 minutes (and the last 2), or the whole workout (Overlay tab
+→ Workout strip → Shows). Beside it: your ride time so far, what’s next and the time
+left in this interval. Without a workout it shows your last 10 minutes of power.</p>
+<p><img src="/wattcher-docs/guide-images/widget-strip.png" alt="Workout strip"></p>
+<p><strong>Big number</strong>: one number, large: 3-second power, interval time left, target, heart
+rate, cadence or % of FTP (Overlay tab → Big number → Shows). Power and % of FTP turn
+green / amber / red for on / under / over target.</p>
+<p><img src="/wattcher-docs/guide-images/widget-big.png" alt="Big number"></p>
+<p><strong>Zone time</strong>: time and share in power zones Z1–Z6 this ride (pauses don’t count).</p>
+<p><img src="/wattcher-docs/guide-images/widget-zones.png" alt="Zone time"></p>
+<p><strong>Workout progress</strong>: elapsed, remaining, % done, and work so far against the workout’s
+estimate (kJ).</p>
+<p><img src="/wattcher-docs/guide-images/widget-progress.png" alt="Workout progress"></p>
+<p><strong>Clock</strong>: time of day and ride time.</p>
+<p><img src="/wattcher-docs/guide-images/widget-clock.png" alt="Clock"></p>
+<p><strong>Cadence</strong>: the main card’s cadence lane as its own, larger card: a 40–120 rpm gauge
+with your settled cadence (purple tick), the shaded “noticeably slower” band below it,
+the red floor under 62 rpm, and your cadence as a marker coloured like the cadence cues
+(white fine, amber notice, red spin up). The readout is “now / settled”, e.g. <strong>84 / 90</strong>.
+Outside a ride it shows just your live cadence (if a sensor sends it).</p>
+<p><strong>Power</strong>: your 3-second power on a gauge centred on the target (it spans ±30 % of the
+target, at least ±40 W; beyond that the marker sits at the end with an arrow). The green
+band is the on-target band of the <a href="/wattcher-docs/cues/">off-target cues</a> (±8 %, at least 8 W, or
+what you set), and the marker is green / amber / red like the main card’s power badge.
+The readout is “now / target”, e.g. <strong>212 / 220</strong>. In ERG the marker just sits on
+target. Without a target (no ride, a free-ride block) it shows only your live power.</p>
+<p>Both gauges can be <strong>Vertical</strong> (the default) or <strong>Horizontal</strong> (laid on their side, low
+values on the left, the readout above): Overlay tab → Cadence / Power → Gauge, or the
+phone’s Overlay tab. The choice is part of the preset, like the big number’s metric.</p>
+<p>Missing sensors show “—”, never 0. A paused ride dims the widgets with a PAUSED tag.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="the-overlay-tab">The Overlay tab</h2><a class="sl-anchor-link" href="#the-overlay-tab"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The Overlay tab”</span></a></div>
+<p><img src="/wattcher-docs/guide-images/control-overlay-widgets.png" alt="The Overlay tab: each overlay with its switch, size and Place button"></p>
+<p>For each overlay (the main card too): an on / off switch, its own size (− / +, 50–200 %),
+its options (main card layout and interval clock, big number metric, strip mode, gauge
+orientation, the splits’ time column and columns), and <strong>Place</strong> (snap grid,
+nudge arrows, Reset position). <strong>Arrange on screen</strong> (Ctrl+Shift+H) lets you drag them
+all. Moving and sizing work as described in <a href="/wattcher-docs/overlay/#move-it">The overlay</a>.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="presets">Presets</h2><a class="sl-anchor-link" href="#presets"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Presets”</span></a></div>
+<p>A preset is a whole overlay set: which overlays are on, the main card’s layout, where
+each one sits and how big it is.</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Main card</th>
+<th>Widgets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Minimal</strong></td>
+<td>Pill</td>
+<td>Workout strip</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Compact</td>
+<td>Workout strip, Intervals &amp; splits</td>
+</tr>
+<tr>
+<td><strong>Big screen</strong></td>
+<td>hidden</td>
+<td>Big number (140 %), Workout strip, Clock</td>
+</tr>
+<tr>
+<td><strong>Everything</strong></td>
+<td>Compact</td>
+<td>all eight (Cadence and Power vertical)</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/wattcher-docs/guide-images/screen-minimal.webp" alt="Minimal"></p>
+<p><img src="/wattcher-docs/guide-images/screen-bigscreen.webp" alt="Big screen: no main card; toasts appear in a strip at the top"></p>
+<ul>
+<li><strong>Switch</strong> in the Overlay tab, with <strong>Ctrl+Shift+P</strong> (also mid-ride), the menu-bar
+icon’s <strong>Next overlay preset</strong>, or the phone (Overlay tab, or the preset button next to
+“Hold to end workout” on the Ride tab). A short note shows the new preset’s name.</li>
+<li><strong>Moving or resizing</strong> keeps the preset: it remembers where you put things, per
+preset.</li>
+<li><strong>Turning overlays on or off</strong>, changing the main layout, the big number, a gauge’s
+orientation or the <a href="#themes-and-card-style">look</a> makes a
+<strong>Custom</strong> set (based on the preset you started from).</li>
+<li><strong>Reset sizes</strong> puts every overlay back to the preset’s size; <strong>Reset preset</strong> puts
+back its layout, spots and sizes.</li>
+</ul>
+<p>With the main card hidden (Big screen), interval summaries, Get ready, Undo after a
+skip, preset changes and sensor messages appear in a small <strong>toast strip</strong> at the top
+center of the screen, only while there is something to show.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="themes-and-card-style">Themes and card style</h2><a class="sl-anchor-link" href="#themes-and-card-style"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Themes and card style”</span></a></div>
+<p>Overlay tab → <strong>Look</strong> (or the phone’s Overlay tab) changes how every overlay looks:</p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>What it’s for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dark glass</strong></td>
+<td>The usual look: dark see-through cards.</td>
+</tr>
+<tr>
+<td><strong>High contrast</strong></td>
+<td>Solid black cards, bright text and colours. For busy or bright games.</td>
+</tr>
+<tr>
+<td><strong>Minimal outline</strong></td>
+<td>Almost no card, outlined numbers. Barely there over video.</td>
+</tr>
+<tr>
+<td><strong>Colour-safe</strong></td>
+<td>Colours that work with red–green colour blindness; the power badge, big number and Power gauge also show ✓ on target, ▼ under, ▲ over.</td>
+</tr>
+<tr>
+<td><strong>Bold</strong></td>
+<td>Bigger numbers, solid blue cards, a thick zone stripe.</td>
+</tr>
+</tbody>
+</table>
+<p>On top of the theme you can set the cards’ <strong>opacity</strong>, <strong>blur</strong> (frosted glass) and
+<strong>corners</strong>, and pick an <strong>accent</strong> colour (the progress bar, highlights, toasts).
+<strong>Reset to the theme’s style</strong> goes back to the theme’s own. Blur costs GPU time while a
+game runs; low opacity and Minimal outline cost nothing.</p>
+<p>The look belongs to the preset, like the big number: the built-in presets are Dark glass,
+changing the look makes a Custom set, and a saved preset keeps its own look. So a “TV”
+preset can be Bold while “Training” stays glass.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="your-own-presets">Your own presets</h2><a class="sl-anchor-link" href="#your-own-presets"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Your own presets”</span></a></div>
+<p><img src="/wattcher-docs/guide-images/control-overlay-presets.png" alt="Presets and the Ctrl+Shift+P cycle"></p>
+<ul>
+<li><strong>Save as preset…</strong> keeps what’s on screen (overlays, layout, positions, sizes, look,
+strip mode) under a name. Up to 20.</li>
+<li>Saved presets are listed after the built-in ones. While one is active, moving or
+sizing things updates it. <strong>Update</strong> saves the current layout into it; <strong>Rename</strong> and
+<strong>Delete</strong> do what they say.</li>
+<li><strong>In cycle</strong>: each preset has a switch for whether <strong>Ctrl+Shift+P</strong> (and Next preset)
+goes through it. Custom is never in the cycle. Example: leave only “Training” and your
+own “TV” in the cycle, and Ctrl+Shift+P flips between the two.</li>
+</ul>
+<p>When <a href="/wattcher-docs/mirroring/">mirroring</a>, each computer keeps its own overlay set: a Big screen
+layout on the TV, Training on the laptop.</p>
+<p>Tip: arrange with <a href="/wattcher-docs/preview/">Preview</a> running, so every widget shows live numbers.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="switch-presets-by-app">Switch presets by app</h2><a class="sl-anchor-link" href="#switch-presets-by-app"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Switch presets by app”</span></a></div>
+<p>Wattcher can change the preset for you when you change apps: Big screen over the game,
+Minimal over a video, Training otherwise. Set it up in Control window → <strong>Overlay</strong> →
+<strong>Switch by app</strong>:</p>
+<ol>
+<li>Turn on <strong>Switch presets by the app in front</strong>.</li>
+<li>Bring the app (the game, the video app) to the front for a moment, then come back
+to Wattcher.</li>
+<li><strong>Add an app…</strong> lists the apps you used recently. Click <strong>Add</strong>, then pick its preset.</li>
+<li><strong>Any other app</strong> decides what happens in every other app: <strong>Keep the current
+preset</strong> (the default) or a preset of your choice.</li>
+</ol>
+<p>How it behaves:</p>
+<ul>
+<li>The preset changes once an app has stayed in front for about 1.5 seconds, so a quick
+Alt-Tab (⌘Tab) changes nothing. It works with or without a ride.</li>
+<li>Wattcher’s own windows, the Dock, Spotlight, notifications and the lock screen don’t
+count as an app.</li>
+<li>If you pick a preset yourself (Overlay tab, Ctrl+Shift+P, the tray or the phone), your
+choice holds until you switch to another app.</li>
+<li>The first rule for an app wins. Use ↑ / ↓ to change the order, <strong>Remove</strong> to delete a
+rule. A rule whose preset you deleted shows <strong>Deleted preset</strong> and is skipped until
+you pick another one.</li>
+<li>Windows games under CrossOver are told apart by their <code dir="auto">.exe</code> (shown as “Windows game”).
+On Linux this needs KDE Plasma; Steam games show up as “Steam game &lt;number&gt;”.</li>
+<li>Each switch is written to the app log with its reason (Settings → Advanced → Show
+logs).</li>
+<li>The phone’s Overlay tab has the same on / off switch. Rules are set up on the computer,
+and each computer keeps its own (mirroring doesn’t copy them).</li>
+</ul>
+<p>Nothing extra is needed: no Screen Recording or Accessibility permission on a Mac.</p>
+</div><footer class="sl-flex" data-astro-cid-ddtxxk7k><div class="meta sl-flex" data-astro-cid-ddtxxk7k></div><div class="pagination-links print:hidden" dir="ltr" data-astro-cid-b5raizh3><a href="/wattcher-docs/overlay/" rel="prev" data-astro-cid-b5raizh3><svg data-astro-cid-b5raizh3="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;" data-astro-cid-hkc32dio><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg><span data-astro-cid-b5raizh3>Previous<br data-astro-cid-b5raizh3><span class="link-title" data-astro-cid-b5raizh3>The overlay</span></span></a><a href="/wattcher-docs/preview/" rel="next" data-astro-cid-b5raizh3><svg data-astro-cid-b5raizh3="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;" data-astro-cid-hkc32dio><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg><span data-astro-cid-b5raizh3>Next<br data-astro-cid-b5raizh3><span class="link-title" data-astro-cid-b5raizh3>Preview</span></span></a></div></footer></div></div></main></div></div></div></div></body></html>

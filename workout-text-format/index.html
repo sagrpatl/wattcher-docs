@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar data-astro-cid-g5ptsecz><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Workout text format (intervals.icu syntax) | Wattcher</title><link rel="canonical" href="https://sagrpatl.github.io/wattcher-docs/workout-text-format/"/><link rel="sitemap" href="/wattcher-docs/sitemap-index.xml"/><link rel="shortcut icon" href="/wattcher-docs/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v7.4.12"/><meta name="generator" content="Starlight v0.43.1"/><meta property="og:title" content="Workout text format (intervals.icu syntax)"/><meta property="og:type" content="article"/><meta property="og:url" content="https://sagrpatl.github.io/wattcher-docs/workout-text-format/"/><meta property="og:locale" content="en"/><meta property="og:site_name" content="Wattcher"/><meta name="twitter:card" content="summary_large_image"/><script>
+	(() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+	})();
+</script><link rel="stylesheet" href="/wattcher-docs/_astro/print.C9eyqPGL.css" media="print"><link rel="stylesheet" href="/wattcher-docs/_astro/common.nv8LIUbO.css"><script type="module" src="/wattcher-docs/_astro/page.cNngjUgL.js"></script></head><body data-astro-cid-g5ptsecz><a class="sl-skip-link" href="#_top" data-astro-cid-qb7clj6f>Skip to content</a><div class="page sl-flex" data-astro-cid-yntsjkba><header class="header" data-astro-cid-yntsjkba><div class="header" data-astro-cid-by6fddyj><div class="title-wrapper sl-flex" data-astro-cid-by6fddyj><a href="/wattcher-docs/" class="site-title sl-flex" data-astro-cid-6rvad3va><img alt src="/wattcher-docs/_astro/logo.qBU7y1If.svg" width="1024" height="1024" data-astro-cid-6rvad3va><span translate="no" data-astro-cid-6rvad3va>Wattcher</span></a></div><div class="sl-flex print:hidden" data-astro-cid-by6fddyj><site-search data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}" data-astro-cid-b5kgnn7o="true"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" data-astro-cid-b5kgnn7o><svg data-astro-cid-b5kgnn7o="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block" aria-hidden="true" data-astro-cid-b5kgnn7o>Search</span><kbd class="sl-hidden md:sl-flex" style="display: none" data-astro-cid-b5kgnn7o><kbd data-astro-cid-b5kgnn7o>Ctrl</kbd><kbd data-astro-cid-b5kgnn7o>K</kbd></kbd></button><dialog style="padding: 0" aria-label="Search" data-astro-cid-b5kgnn7o><div class="dialog-frame sl-flex" data-astro-cid-b5kgnn7o><button data-close-modal class="sl-flex md:sl-hidden" data-astro-cid-b5kgnn7o>Cancel</button><div class="search-container" data-astro-cid-b5kgnn7o><div id="starlight__search" data-astro-cid-b5kgnn7o></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/wattcher-docs/_astro/Search.astro_astro_type_script_index_0_lang.BKnSN1Zo.js"></script></div><div class="sl-hidden md:sl-flex print:hidden right-group" data-astro-cid-by6fddyj><div class="sl-flex social-icons" data-astro-cid-by6fddyj></div><starlight-theme-select data-astro-cid-smhvfpqh="true"><label style="--sl-select-width: 6.25em" data-astro-cid-2z5xp7gb><span class="sr-only" data-astro-cid-2z5xp7gb>Select theme</span><span class="icon label-icon" data-astro-cid-2z5xp7gb><svg class="sl-theme-icon-dark" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg class="sl-theme-icon-light" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg class="sl-theme-icon-auto" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></span><select autocomplete="off" data-astro-cid-2z5xp7gb><option value="dark" data-astro-cid-2z5xp7gb>Dark</option><option value="light" data-astro-cid-2z5xp7gb>Light</option><option value="auto" selected data-astro-cid-2z5xp7gb>Auto</option></select><svg class="icon caret" data-astro-cid-2z5xp7gb="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>(() => {
+		const theme = (typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme'));
+		if (theme) document.querySelectorAll('starlight-theme-select select').forEach((s) => { s.value = theme; });
+	})();</script><script type="module">var e=`starlight-theme`,t=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,n=()=>t(typeof localStorage<`u`&&localStorage.getItem(e));function r(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var i=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function a(e){document.querySelectorAll(`starlight-theme-select select`).forEach(t=>{t.value=e}),document.documentElement.dataset.theme=e===`auto`?i():e,r(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{n()===`auto`&&a(`auto`)});var o=class extends HTMLElement{constructor(){super(),a(n()),this.querySelector(`select`)?.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&a(t(e.currentTarget.value))})}};customElements.define(`starlight-theme-select`,o);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script></div></div></header><nav class="sidebar print:hidden" aria-label="Main" data-astro-cid-yntsjkba><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden" data-astro-cid-r2osgdlg><svg class="open-menu" data-astro-cid-r2osgdlg="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg class="close-menu" data-astro-cid-r2osgdlg="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only" data-astro-cid-r2osgdlg>Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane" data-astro-cid-yntsjkba="true"><div class="sidebar-content sl-flex" data-astro-cid-yntsjkba><sl-sidebar-state-persist data-hash="0ac710a" data-astro-cid-ipdry5cl="true"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level" data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/" class="large" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Overview</span></a></li><li data-astro-cid-rmhv4bp6><details open data-astro-cid-rmhv4bp6><summary data-astro-cid-rmhv4bp6><span class="group-label" data-astro-cid-rmhv4bp6><span class="large" data-astro-cid-rmhv4bp6>Start here</span></span><svg class="caret" data-astro-cid-rmhv4bp6="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/getting-started/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Getting started</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/devices/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Pair your trainer and sensors</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/first-ride/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Your first ride</span></a></li></ul></details></li><li data-astro-cid-rmhv4bp6><details open data-astro-cid-rmhv4bp6><summary data-astro-cid-rmhv4bp6><span class="group-label" data-astro-cid-rmhv4bp6><span class="large" data-astro-cid-rmhv4bp6>Using Wattcher</span></span><svg class="caret" data-astro-cid-rmhv4bp6="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul data-astro-cid-rmhv4bp6><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/overlay/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>The overlay</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/widgets-and-presets/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Widgets and presets</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/preview/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Preview</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/cues/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Off-target cues</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/phone-remote/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Phone remote</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/mirroring/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Mirroring</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/building-workouts/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Building workouts</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/workout-text-format/" aria-current="page" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Workout text format (intervals.icu syntax)</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/rides/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Rides and .FIT files</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/shortcuts/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Keyboard shortcuts</span></a></li><li data-astro-cid-rmhv4bp6><a href="/wattcher-docs/troubleshooting/" data-astro-cid-rmhv4bp6><span data-astro-cid-rmhv4bp6>Troubleshooting</span></a></li></ul></details></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex" data-astro-cid-p4azlveh><div class="social-icons" data-astro-cid-p4azlveh></div><starlight-theme-select data-astro-cid-smhvfpqh="true"><label style="--sl-select-width: 6.25em" data-astro-cid-2z5xp7gb><span class="sr-only" data-astro-cid-2z5xp7gb>Select theme</span><span class="icon label-icon" data-astro-cid-2z5xp7gb><svg class="sl-theme-icon-dark" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg class="sl-theme-icon-light" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg class="sl-theme-icon-auto" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></span><select autocomplete="off" data-astro-cid-2z5xp7gb><option value="dark" data-astro-cid-2z5xp7gb>Dark</option><option value="light" data-astro-cid-2z5xp7gb>Light</option><option value="auto" selected data-astro-cid-2z5xp7gb>Auto</option></select><svg class="icon caret" data-astro-cid-2z5xp7gb="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>(() => {
+		const theme = (typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme'));
+		if (theme) document.querySelectorAll('starlight-theme-select select').forEach((s) => { s.value = theme; });
+	})();</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame" data-astro-cid-yntsjkba><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex" data-astro-cid-lrzkfocr><aside class="right-sidebar-container print:hidden" data-astro-cid-lrzkfocr><div class="right-sidebar" data-astro-cid-lrzkfocr><div class="lg:sl-hidden" data-astro-cid-qok35upx><mobile-starlight-toc data-min-h="2" data-max-h="3" data-astro-cid-66cqc7ze="true"><nav aria-labelledby="starlight__on-this-page--mobile" data-astro-cid-66cqc7ze><details id="starlight__mobile-toc" data-astro-cid-66cqc7ze><summary id="starlight__on-this-page--mobile" class="sl-flex" data-astro-cid-66cqc7ze><span class="toggle sl-flex" data-astro-cid-66cqc7ze>On this page<svg class="caret" data-astro-cid-66cqc7ze="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current" data-astro-cid-66cqc7ze></span></summary><div class="dropdown" data-astro-cid-66cqc7ze><ul class="isMobile" style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#steps" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Steps</span></a><ul class="isMobile" style="--depth: 1;" data-astro-cid-jugkfwgx><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#durations" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Durations</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#power-targets-one-per-step" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Power targets (one per step)</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#cadence" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Cadence</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#cue-text" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Cue text</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#intensity" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Intensity</span></a></li></ul></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#sections-and-repeats" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Sections and repeats</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#comments-and-metadata" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Comments and metadata</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#not-supported-errors" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Not supported (errors)</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#errors-and-warnings" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Errors and warnings</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#editing-zwo-erg-and-mrc-workouts" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Editing .zwo, .erg and .mrc workouts</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#for-developers" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>For developers</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/wattcher-docs/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block" data-astro-cid-qok35upx><div class="sl-container" data-astro-cid-qok35upx><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#steps" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Steps</span></a><ul style="--depth: 1;" data-astro-cid-jugkfwgx><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#durations" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Durations</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#power-targets-one-per-step" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Power targets (one per step)</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#cadence" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Cadence</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#cue-text" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Cue text</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#intensity" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Intensity</span></a></li></ul></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#sections-and-repeats" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Sections and repeats</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#comments-and-metadata" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Comments and metadata</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#not-supported-errors" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Not supported (errors)</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#errors-and-warnings" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Errors and warnings</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#editing-zwo-erg-and-mrc-workouts" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Editing .zwo, .erg and .mrc workouts</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#for-developers" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>For developers</span></a></li></ul></nav></starlight-toc><script type="module" src="/wattcher-docs/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane" data-astro-cid-lrzkfocr><main data-pagefind-body lang="en" dir="ltr" data-astro-cid-g5ptsecz><div class="sl-banner" data-pagefind-ignore data-astro-cid-ofbg3qve>Wattcher isn't publicly available yet. This guide is an early preview; downloads and source code come later.</div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><h1 id="_top" data-astro-cid-bebwqqxs>Workout text format (intervals.icu syntax)</h1></div></div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><div class="sl-markdown-content"><p><a href="/wattcher-docs/">Guide</a> › <a href="/wattcher-docs/building-workouts/">Building workouts</a> › Text format reference</p>
+<p>The Builder tab and <code dir="auto">.txt</code> files in the Workouts folder use the <strong>intervals.icu workout
+builder text syntax</strong>, so you can paste workouts between intervals.icu and Wattcher.
+This page is the full reference; <a href="/wattcher-docs/building-workouts/">Building workouts</a> is the short
+version.</p>
+<p>Sources for the syntax: David Tinker’s <a href="https://forum.intervals.icu/t/workout-builder/1163">Workout builder</a>
+post, the <a href="https://forum.intervals.icu/t/workout-builder-syntax-quick-guide/123701">Workout Builder Syntax Quick Guide</a>,
+the <a href="https://forum.intervals.icu/t/text-events-are-now-supported-in-the-workout-builder/96016">text events announcement</a>,
+and forum replies on <a href="https://forum.intervals.icu/t/workout-builder/1163?page=57">ranges vs. ramps</a>.
+intervals.icu has no formal grammar; where it is unclear, the choice made here is noted.</p>
+<div class="expressive-code"><link rel="stylesheet" href="/wattcher-docs/_astro/ec.w36nc.css"><script type="module" src="/wattcher-docs/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="text"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53"># name: Sweet Spot 3x10</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53"># description: Three 10-minute sweet-spot blocks.</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Warmup</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- 10m ramp 50-75% 90rpm</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- 3m 65%</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Main Set 3x</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- Settle in 10m 88-92% 90rpm</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- 5m 55%</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Cooldown</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- 7m ramp 65-40%</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="# name: Sweet Spot 3x10# description: Three 10-minute sweet-spot blocks.Warmup- 10m ramp 50-75% 90rpm- 3m 65%Main Set 3x- Settle in 10m 88-92% 90rpm- 5m 55%Cooldown- 7m ramp 65-40%"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="steps">Steps</h2><a class="sl-anchor-link" href="#steps"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Steps”</span></a></div>
+<p>A step is a line starting with <code dir="auto">-</code>:</p>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="text"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- [cue text] &lt;duration&gt; &lt;target&gt; [cadence] [intensity=…] [more cue text]</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="- [cue text] <duration> <target> [cadence] [intensity=…] [more cue text]"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="durations">Durations</h3><a class="sl-anchor-link" href="#durations"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Durations”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code dir="auto">1h</code>, <code dir="auto">10m</code>, <code dir="auto">30s</code>, <code dir="auto">90s</code></td>
+<td>hours / minutes / seconds</td>
+</tr>
+<tr>
+<td><code dir="auto">1h2m30s</code>, <code dir="auto">5m30s</code>, <code dir="auto">1h5s</code></td>
+<td>combined (largest unit first)</td>
+</tr>
+<tr>
+<td><code dir="auto">1m30</code></td>
+<td>1 min 30 s (a trailing bare number is the next smaller unit)</td>
+</tr>
+<tr>
+<td><code dir="auto">1h30</code></td>
+<td>1 h 30 min (same rule; intervals.icu may not accept it)</td>
+</tr>
+<tr>
+<td><code dir="auto">5'</code>, <code dir="auto">30"</code>, <code dir="auto">1'30"</code>, <code dir="auto">1'30</code></td>
+<td>short forms</td>
+</tr>
+<tr>
+<td><code dir="auto">10min</code>, <code dir="auto">2mins</code>, <code dir="auto">45sec</code></td>
+<td>spelled-out units</td>
+</tr>
+<tr>
+<td><code dir="auto">1.5m</code>, <code dir="auto">37.5s</code></td>
+<td>decimals</td>
+</tr>
+</tbody>
+</table>
+<p><code dir="auto">m</code> always means <strong>minutes</strong>. Distances (<code dir="auto">2km</code>, <code dir="auto">500mtr</code>, <code dir="auto">1mi</code>, <code dir="auto">400y</code>) are <strong>errors</strong>:
+a trainer workout needs time-based steps.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="power-targets-one-per-step">Power targets (one per step)</h3><a class="sl-anchor-link" href="#power-targets-one-per-step"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Power targets (one per step)”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code dir="auto">75%</code>, <code dir="auto">75% FTP</code></td>
+<td>% of FTP</td>
+</tr>
+<tr>
+<td><code dir="auto">200W</code>, <code dir="auto">200w</code>, <code dir="auto">200 W</code></td>
+<td>absolute watts, converted to % of your FTP when the file is loaded</td>
+</tr>
+<tr>
+<td><code dir="auto">Z2</code>, <code dir="auto">z2</code></td>
+<td>power zone (see table below), steady at the zone midpoint</td>
+</tr>
+<tr>
+<td><code dir="auto">88-92%</code>, <code dir="auto">88%-92%</code>, <code dir="auto">95–105%</code></td>
+<td>range: <strong>steady at the midpoint</strong> (90 %)</td>
+</tr>
+<tr>
+<td><code dir="auto">200-240W</code>, <code dir="auto">Z3-Z4</code></td>
+<td>ranges in watts / zones: also steady at the midpoint</td>
+</tr>
+<tr>
+<td><code dir="auto">ramp 50-75%</code>, <code dir="auto">Ramp 75%-50%</code></td>
+<td>ramp: target moves linearly from the first to the second value</td>
+</tr>
+<tr>
+<td><code dir="auto">ramp 100-200W</code>, <code dir="auto">ramp Z1-Z3</code></td>
+<td>ramps in watts, or between zone midpoints</td>
+</tr>
+<tr>
+<td><code dir="auto">ramp Z2</code></td>
+<td>ramp across one zone, low to high bound (56 → 75 %)</td>
+</tr>
+<tr>
+<td><code dir="auto">freeride</code>, <code dir="auto">free ride</code></td>
+<td>no target: ERG off, the trainer runs in resistance mode</td>
+</tr>
+<tr>
+<td><code dir="auto">maxeffort</code>, <code dir="auto">max effort</code></td>
+<td>all-out effort, no target. <strong>Extension</strong>: not intervals.icu syntax (from <code dir="auto">.zwo</code> <code dir="auto">MaxEffort</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gears and resistance.</strong> Without a target you shift 24 virtual gears (− / +; how they
+feel: <a href="/wattcher-docs/first-ride/#4-during-the-ride">calibrated gears</a>). A
+<code dir="auto">freeride</code> or <code dir="auto">maxeffort</code> step can start in a gear (<code dir="auto">- 15s maxeffort gear 18</code>) or at an
+exact trainer resistance level (<code dir="auto">- 3m freeride resistance 40%</code>, 0–100 %). Either carries
+on into later free steps until you shift (from an exact level, − / + go to the nearest
+gear below / above it) or a step names another. <strong>Extension</strong>: not intervals.icu syntax;
+<code dir="auto">gear</code> / <code dir="auto">resistance</code> on a step with a power target, or both on one step, is an error.</p>
+<p><strong>Sprint steps.</strong> <code dir="auto">- 10s sprint</code> is an all-out step (like <code dir="auto">maxeffort</code>) whose resistance
+is set from your own sprints. Every rider’s power peaks at a different cadence and fades
+at a different rate, so Wattcher learns both from your sprints and max efforts (Settings
+→ Advanced → Your sprint). The first sprint starts light; within two or three it starts
+where you settle near your best cadence. In the step it holds the level for 2 s while
+you wind up, eases off as you tire, and never adds resistance in the last 3 s.
+<code dir="auto">- 10s sprint 120rpm</code> keeps you from dropping below 120 rpm. A step’s
+<code dir="auto">resistance 40%</code> is where it starts. Shifting during the step takes over from it. <code dir="auto">sprint</code> is cue text before the
+duration or on a step with a power target (<code dir="auto">- 30s Sprint 150%</code>). <strong>Extension</strong>: not
+intervals.icu syntax.</p>
+<p><strong>Ranges vs. ramps.</strong> In intervals.icu a range without <code dir="auto">ramp</code> is a target range, and “ERG
+mode and some devices use the midpoint of the range” (forum, Gerald). ERG can only hold one
+number, so we ride the midpoint. Only <code dir="auto">ramp</code> makes a slope.</p>
+<p><strong>Zones.</strong> Default intervals.icu / Coggan power zones (% FTP):</p>
+<table>
+<thead>
+<tr>
+<th>Zone</th>
+<th>Z1</th>
+<th>Z2</th>
+<th>Z3</th>
+<th>Z4</th>
+<th>Z5</th>
+<th>Z6</th>
+<th>Z7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td>45–55*</td>
+<td>56–75</td>
+<td>76–90</td>
+<td>91–105</td>
+<td>106–120</td>
+<td>121–150</td>
+<td>151–200*</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>50</td>
+<td>65.5</td>
+<td>83</td>
+<td>98</td>
+<td>113</td>
+<td>135.5</td>
+<td>175.5</td>
+</tr>
+</tbody>
+</table>
+<p>* Z1 and Z7 are open-ended in the zone model. A bounded range gives a usable ERG target.
+Custom zones (<code dir="auto">CZ1</code>) are errors.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="cadence">Cadence</h3><a class="sl-anchor-link" href="#cadence"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Cadence”</span></a></div>
+<p><code dir="auto">90rpm</code>, <code dir="auto">90 rpm</code>, <code dir="auto">85-95rpm</code> (the midpoint, 90, is shown as the cadence target). Values must
+be between 1 and 250.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="cue-text">Cue text</h3><a class="sl-anchor-link" href="#cue-text"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Cue text”</span></a></div>
+<ul>
+<li>Text <strong>before</strong> the duration is the step’s cue (<code dir="auto">- Recovery 30s 50%</code> shows “Recovery”).</li>
+<li>Other words that aren’t syntax, such as <code dir="auto">- 5m recovery at 40%</code> or
+<code dir="auto">- 4m 100% 40-50 rpm, power is less important</code>, are appended to that cue.</li>
+<li><strong>Timed cues</strong> (intervals.icu text events): <code dir="auto">N^D text</code> shows <code dir="auto">text</code> <code dir="auto">N</code> seconds into the
+step for <code dir="auto">D</code> seconds. <code dir="auto">N^ text</code> omits the duration.
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="text"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- First 60^30 Second 120^30 Third 10m 65%</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- 20^ Settle 5m 85%</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">- First prompt at 0s 33^2nd prompt at 33s &lt;!&gt; 10m ramp 25-75%</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="- First 60^30 Second 120^30 Third 10m 65%- 20^ Settle 5m 85%- First prompt at 0s 33^2nd prompt at 33s <!> 10m ramp 25-75%"><div></div></button></div></figure></div>
+<code dir="auto">&lt;!&gt;</code> ends the cue text explicitly. Everything before it is cue text, even <code dir="auto">5m</code> or <code dir="auto">90%</code>.
+Use it when the cue mentions durations or targets. A cue later than the end of its step
+gives a warning.</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="intensity">Intensity</h3><a class="sl-anchor-link" href="#intensity"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Intensity”</span></a></div>
+<p><code dir="auto">intensity=warmup|cooldown|active|recovery</code> (also <code dir="auto">work</code>, <code dir="auto">interval</code>, <code dir="auto">rest</code>) sets the
+segment’s role. The role drives HUD labels and “intensity applies to work only”. Without it:
+steps in a section whose name contains “warm” / “cool” are warm-up / cool-down. Free ride
+counts as recovery and max effort as work. Any other step counts as work above 75 % FTP,
+otherwise recovery. An unknown value gives a warning and is ignored.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="sections-and-repeats">Sections and repeats</h2><a class="sl-anchor-link" href="#sections-and-repeats"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Sections and repeats”</span></a></div>
+<ul>
+<li>Any other non-blank line is a <strong>section header</strong> (<code dir="auto">Warmup</code>, <code dir="auto">Main Set</code>, <code dir="auto">Cooldown:</code>). Its
+name labels the steps below it.</li>
+<li><code dir="auto">Nx</code> anywhere in a header repeats the steps below it: <code dir="auto">Main Set 3x</code>, <code dir="auto">3x</code>, <code dir="auto">2x Over-unders</code>.</li>
+<li>A section ends at the next <strong>blank line</strong> or the next header. As in intervals.icu, leave a
+blank line before and after each repeat block. Steps after a blank line without a new
+header belong to no section.</li>
+<li><strong>Nested repeats are not supported</strong> (same as intervals.icu). A second <code dir="auto">Nx</code> in a header is
+an error. <code dir="auto">0x</code> is an error. A repeat with no steps below it gives a warning.</li>
+</ul>
+<div class="sl-heading-wrapper level-h2"><h2 id="comments-and-metadata">Comments and metadata</h2><a class="sl-anchor-link" href="#comments-and-metadata"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Comments and metadata”</span></a></div>
+<ul>
+<li>Lines starting with <code dir="auto">#</code>, <code dir="auto">//</code>, <code dir="auto">|</code>, <code dir="auto">&lt;</code>, <code dir="auto">---</code>, <code dir="auto">***</code>, <code dir="auto">___</code> or <code dir="auto">===</code> are ignored. This
+covers Markdown headings, tables, rules and HTML, which intervals.icu also ignores.</li>
+<li><code dir="auto"># name: …</code>, <code dir="auto"># author: …</code> and <code dir="auto"># description: …</code> set the workout’s metadata (repeat
+<code dir="auto"># description:</code> for more lines). intervals.icu treats these lines as Markdown headings.</li>
+</ul>
+<div class="sl-heading-wrapper level-h2"><h2 id="not-supported-errors">Not supported (errors)</h2><a class="sl-anchor-link" href="#not-supported-errors"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Not supported (errors)”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code dir="auto">2km</code>, <code dir="auto">500mtr</code>, <code dir="auto">1mi</code>, <code dir="auto">400y</code></td>
+<td>distance steps: a trainer workout needs durations</td>
+</tr>
+<tr>
+<td><code dir="auto">70% HR</code>, <code dir="auto">95% LTHR</code>, <code dir="auto">Z2 HR</code>, <code dir="auto">140-150bpm</code></td>
+<td>heart-rate targets: ERG needs power</td>
+</tr>
+<tr>
+<td><code dir="auto">60% Pace</code>, <code dir="auto">Z2 Pace</code>, <code dir="auto">5:00/km Pace</code></td>
+<td>pace targets (run / swim)</td>
+</tr>
+<tr>
+<td><code dir="auto">60% MMP 5m</code></td>
+<td>% of mean-max power</td>
+</tr>
+<tr>
+<td><code dir="auto">3 W/kg</code></td>
+<td>W/kg targets</td>
+</tr>
+<tr>
+<td><code dir="auto">CZ1</code></td>
+<td>custom zones</td>
+</tr>
+<tr>
+<td>a step without a target</td>
+<td>use <code dir="auto">freeride</code> for “no ERG”</td>
+</tr>
+<tr>
+<td><code dir="auto">200W</code> without an FTP</td>
+<td>watts need your FTP (Settings)</td>
+</tr>
+</tbody>
+</table>
+<p><code dir="auto">HR</code> or <code dir="auto">pace</code> only cause an error right after a target (<code dir="auto">60% HR</code>). In other places they are
+ordinary cue text (<code dir="auto">- 10m 70% steady pace, keep HR low</code>). intervals.icu-only features with no
+trainer meaning are ignored: “Press lap”, localised cues (<code dir="auto">en/… fr/…</code>) and Markdown styling.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="errors-and-warnings">Errors and warnings</h2><a class="sl-anchor-link" href="#errors-and-warnings"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Errors and warnings”</span></a></div>
+<p>The parser reports <strong>every</strong> error with a line, column and message. For example,
+<code dir="auto">line 3:3: distance "5km" isn't supported on the trainer</code>. A file with errors does not load.
+Warnings (an empty repeat, a cue past its step’s end, an unknown intensity) do not stop
+loading.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="editing-zwo-erg-and-mrc-workouts">Editing .zwo, .erg and .mrc workouts</h2><a class="sl-anchor-link" href="#editing-zwo-erg-and-mrc-workouts"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Editing .zwo, .erg and .mrc workouts”</span></a></div>
+<p><strong>Edit</strong> on a Library workout opens it in the Builder as this text: identical runs of
+steps become <code dir="auto">Nx</code> blocks, and warm-up / cool-down steps go under <code dir="auto">Warmup</code> / <code dir="auto">Cooldown</code>
+headers, so no <code dir="auto">intensity=</code> keywords are needed. Saving keeps your original file and
+writes a new <code dir="auto">.txt</code> workout. The optional <code dir="auto">.zwo</code> export drops section names.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="for-developers">For developers</h2><a class="sl-anchor-link" href="#for-developers"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “For developers”</span></a></div>
+<p>Parser and serializer: <code dir="auto">crates/core/src/workout/icu.rs</code> (<code dir="auto">parse_icu</code>, <code dir="auto">to_icu</code>;
+<code dir="auto">parse_icu(to_icu(w)) == w</code> holds for every fixture; <code dir="auto">with_section_labels</code> moves warm-up /
+cool-down segments under their headers; <code dir="auto">to_zwo</code> for the export). Example files:
+<code dir="auto">crates/core/tests/fixtures/workouts/icu_*.txt</code>. See also
+the architecture notes.</p>
+</div><footer class="sl-flex" data-astro-cid-ddtxxk7k><div class="meta sl-flex" data-astro-cid-ddtxxk7k></div><div class="pagination-links print:hidden" dir="ltr" data-astro-cid-b5raizh3><a href="/wattcher-docs/building-workouts/" rel="prev" data-astro-cid-b5raizh3><svg data-astro-cid-b5raizh3="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;" data-astro-cid-hkc32dio><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg><span data-astro-cid-b5raizh3>Previous<br data-astro-cid-b5raizh3><span class="link-title" data-astro-cid-b5raizh3>Building workouts</span></span></a><a href="/wattcher-docs/rides/" rel="next" data-astro-cid-b5raizh3><svg data-astro-cid-b5raizh3="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;" data-astro-cid-hkc32dio><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg><span data-astro-cid-b5raizh3>Next<br data-astro-cid-b5raizh3><span class="link-title" data-astro-cid-b5raizh3>Rides and .FIT files</span></span></a></div></footer></div></div></main></div></div></div></div></body></html>

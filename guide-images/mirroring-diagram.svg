@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-labelledby="t d">
+  <title id="t">How mirroring works</title>
+  <desc id="d">The trainer connects over Bluetooth to the host computer, which records the ride. The phone remote controls the host over Wi-Fi. The host sends the live ride to up to four mirror computers, which only show it.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffb020"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8b96a5"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: Barlow, system-ui, -apple-system, "Segoe UI", sans-serif; fill: #e9edf2; }
+    .h { font-size: 13px; font-weight: 600; letter-spacing: 1.5px; fill: #ffb020; }
+    .n { font-size: 17px; font-weight: 600; }
+    .s { font-size: 14px; fill: #c4cbd5; }
+    .m { font-size: 13px; fill: #8b96a5; }
+    .box { fill: #151a21; stroke: #262e39; stroke-width: 1.5; }
+    .host { fill: #1d1a12; stroke: #ffb020; stroke-width: 2; }
+  </style>
+
+  <rect width="800" height="360" rx="16" fill="#0d1014"/>
+
+  <!-- Trainer -->
+  <rect class="box" x="24" y="56" width="150" height="88" rx="10"/>
+  <text class="h" x="40" y="82">SENSORS</text>
+  <text class="n" x="40" y="106">Trainer</text>
+  <text class="m" x="40" y="128">+ heart rate, cadence</text>
+
+  <path d="M178 100H252" stroke="#8b96a5" stroke-width="2" fill="none" marker-end="url(#g)" marker-start="url(#g)"/>
+  <text class="m" x="186" y="90">Bluetooth</text>
+
+  <!-- Host -->
+  <rect class="host" x="258" y="30" width="226" height="140" rx="12"/>
+  <text class="h" x="276" y="56">HOST</text>
+  <text class="n" x="276" y="80">The computer by the bike</text>
+  <text class="s" x="276" y="106">• Controls the trainer</text>
+  <text class="s" x="276" y="128">• Records the ride (.fit)</text>
+  <text class="s" x="276" y="150">• Shows its own overlay</text>
+
+  <!-- Phone -->
+  <rect class="box" x="266" y="252" width="212" height="84" rx="10"/>
+  <text class="h" x="282" y="278">PHONE REMOTE</text>
+  <text class="n" x="282" y="302">Controls the ride</text>
+  <text class="m" x="282" y="322">A web page: nothing to install</text>
+
+  <path d="M371 248V176" stroke="#8b96a5" stroke-width="2" fill="none" marker-end="url(#g)" marker-start="url(#g)"/>
+  <text class="m" x="382" y="208">Wi-Fi</text>
+  <text class="m" x="382" y="224">buttons and</text>
+  <text class="m" x="382" y="240">live numbers</text>
+
+  <!-- Arrows to mirrors -->
+  <path d="M488 86C540 86 540 76 586 76" stroke="#ffb020" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M488 146C548 146 532 248 586 248" stroke="#ffb020" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text class="s" x="504" y="114" style="fill:#ffb020">live ride</text>
+  <text class="m" x="504" y="130">one way</text>
+
+  <!-- Mirrors -->
+  <rect class="box" x="592" y="24" width="190" height="112" rx="10"/>
+  <text class="h" x="608" y="50">MIRROR</text>
+  <text class="n" x="608" y="74">Gaming PC on the TV</text>
+  <text class="s" x="608" y="98">Shows the ride</text>
+  <text class="s" x="608" y="120">Its own overlay layout</text>
+
+  <rect class="box" x="592" y="196" width="190" height="112" rx="10"/>
+  <text class="h" x="608" y="222">MIRROR</text>
+  <text class="n" x="608" y="246">Any other screen</text>
+  <text class="s" x="608" y="270">View only</text>
+  <text class="s" x="608" y="292">Up to 4 at once</text>
+</svg>
